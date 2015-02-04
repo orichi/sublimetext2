@@ -7,15 +7,15 @@
 	> gcc -shared -o libsublime-imfix.so sublime_imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC
 4. 自己制作启动脚本，并加入环境变量中
 <pre><code>
-#!/bin/bash
-CMD="LD_PRELOAD=$HOME/Software/sublime_text_3/libsublime-imfix.so $HOME/Software/sublime_text_3/sublime_text"
+> #!/bin/bash
+> CMD="LD_PRELOAD=$HOME/Software/sublime_text_3/libsublime-imfix.so $HOME/Software/sublime_text_3/sublime_text"
 
-FILENAME=$1
-if [ -n "$1" ]
-then
-	CMD=${CMD}" "`pwd`/$FILENAME
-fi
-eval $CMD
+> FILENAME=$1
+> if [ -n "$1" ]
+> then
+>	CMD=${CMD}" "`pwd`/$FILENAME
+> fi
+> eval $CMD
 </code></pre>
 
 
