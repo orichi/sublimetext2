@@ -9,7 +9,6 @@
 <pre><code>
 > #!/bin/bash
 > CMD="LD_PRELOAD=$HOME/Software/sublime_text_3/libsublime-imfix.so $HOME/Software/sublime_text_3/sublime_text"
-
 > FILENAME=$1
 > if [ -n "$1" ]
 > then
