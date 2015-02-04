@@ -4,7 +4,7 @@
 1. 下载sublime text2压缩包，并解压
 2. 安装gtk2环境开发包，如果已经安装，直接跳过
 3. 复制 sublime_imfix.c 到sublime的lib目录里，编译动态链接库
-	* `gcc -shared -o libsublime-imfix.so sublime_imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC`
+	``gcc -shared -o libsublime-imfix.so sublime_imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC``
 4. 自己制作启动脚本，并加入环境变量中
 <pre><code>
 > #!/bin/bash
